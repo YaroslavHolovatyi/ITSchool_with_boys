@@ -52,4 +52,20 @@ console.log(counter);
 
 //*   3. Створи клас `Rectangle` з методами для обчислення `area()` і `perimeter()`.
 
+class Rectangle {
+    constructor(area, perimeter,width,height,widthb,heightb) {
+        this.area = area;
+        this.perimeter = perimeter;
+        this.width = width;
+        this.height = height;
+        this.widthb = widthb;
+        this.heightb = heightb;
+    }
+    area() {
+        this.width*this.height
+    };
+    perimeter() {
+        
+    }
 
+}
