@@ -1,3 +1,4 @@
+
 //todo   1. Додай до класу `Student` перевірку: якщо `grade < 1` або `grade > 12`, виводь `"Невірний клас!"`.
 //todo   2. Створи клас `Counter` із властивістю `count`, який має методи `increase()`, `decrease()` і `reset()`.
 //todo   3. Створи клас `Rectangle` з методами для обчислення `area()` і `perimeter()`.
@@ -65,7 +66,7 @@ class Rectangle {
         this.width*this.height
     };
     perimeter() {
-        
+        return 2*(this.width+this.height);
     }
 
 }
