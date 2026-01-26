@@ -1,0 +1,11 @@
+.nav {
+	background-color: #303a49;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+}
+.nav__links {
+	display: flex;
+	gap: 15px;
+}
