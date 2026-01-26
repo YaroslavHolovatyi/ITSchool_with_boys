@@ -65,6 +65,7 @@ class Rectangle {
         this.width*this.height
     };
     perimeter() {
+        console.log();
         
     }
 
