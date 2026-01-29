@@ -12,11 +12,11 @@ function Navbar() {
 				{navbarButtons.map((button) => (
 					<Link href={button.href} cartoonName={button.cartoonName} />
 				))}
-				{/* 
 
-				ПОГАНЕ ВИКОРИСТАННЯ МОЖЛИВОСТЕЙ РЕАКТУ
-				
-								<Link
+				{/* ПОГАНЕ ВИКОРИСТАННЯ МОЖЛИВОСТЕЙ РЕАКТУ (Антипаттерн - повторення
+				коду) */}
+
+				{/* <Link
 					href="https://simpsonsua.tv/simpsony/"
 					cartoonName="Сімпсони"
 				/>
@@ -38,10 +38,8 @@ function Navbar() {
 				/>
 				<Link
 					href="https://simpsonsua.tv/multserialy-ukrainskoyu/"
-					cartoonName="Інші Мульти"
-				/>
-
-				*/}
+					cartoonName="Інші Мульти" 
+				/>*/}
 			</div>
 			<div className="nav__enter">
 				<button className="nav__button">Увійти</button>
