@@ -14,6 +14,3 @@ export default function InvincibleCard({ seasonNumber, episodeNumber, src }) {
 		</div>
 	);
 }
-{
-	/*  */
-}
