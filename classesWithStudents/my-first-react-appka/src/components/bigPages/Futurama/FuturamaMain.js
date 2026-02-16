@@ -20,3 +20,15 @@ export default function FuturamaMain() {
 		</div>
 	);
 }
+
+function plus(a, b) {
+	return a + b;
+}
+
+plus(2, 3);
+
+function stupidPlus() {
+	return 2 + 3;
+}
+
+stupidPlus();
