@@ -6,6 +6,7 @@ import "./mlp-main.css";
 export default function MlpMain() {
 	return (
 		<div>
+			<MlpInfo />
 			<div className="futurama-cards">
 				{Mlp.map((season) => (
 					<FuturamaCard
@@ -16,7 +17,6 @@ export default function MlpMain() {
 					/>
 				))}
 			</div>
-			<MlpInfo />
 		</div>
 	);
 }

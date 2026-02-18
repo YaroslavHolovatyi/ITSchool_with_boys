@@ -37,6 +37,10 @@ function Main() {
 			<PageSection sectionTitle="НАЗІК УНІТАЗІК">
 				<MlpMain />
 			</PageSection>
+
+			<PageSection sectionTitle="DENISKA HWOI">
+				{/* Код товго мейну  як зверху*/}
+			</PageSection>
 		</>
 	);
 }
