@@ -4,6 +4,7 @@ import lastEpisodes from "../../../data/last-episodes";
 import FuturamaMain from "../Futurama/FuturamaMain";
 import CartoonCard from "./cartoon-card/CartoonCard";
 import InvincibleMain from "../Invincible/InvincibleMain";
+import MlpMain from "../mlp/mlp-main";
 
 function Main() {
 	//Для CartoonCard Main це БАТЯ
@@ -30,8 +31,12 @@ function Main() {
 				</div>
 			</PageSection>
 			<PageSection sectionTitle="Актуально ЗАРАЗ"></PageSection>
-			<PageSection sectionTitle="Мультсеріали УКРАЇНСЬКОЮ"></PageSection>
-			<PageSection sectionTitle="Наш БЛОГ"></PageSection>
+			<PageSection sectionTitle="Мультсеріали УКРАЇНСЬКОЮ">
+				<FuturamaMain />
+			</PageSection>
+			<PageSection sectionTitle="НАЗІК УНІТАЗІК">
+				<MlpMain />
+			</PageSection>
 		</>
 	);
 }

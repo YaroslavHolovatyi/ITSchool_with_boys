@@ -11,7 +11,7 @@ export default function FuturamaMain() {
 				{futurama.map((season) => (
 					<FuturamaCard
 						key={season.seasonNumber}
-						seasonNumber={season.seasonNumber}
+						awsdasdasdasd={season.seasonNumber}
 						episodeNumber={season.episodeNumber}
 						src={season.src}
 					/>

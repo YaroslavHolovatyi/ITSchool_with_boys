@@ -1,3 +1,5 @@
+import "./CartoonCard.css";
+
 export default function CartoonCard(copss) {
 	// porps = properties =властивості, властивості є у об'єкта.
 	return (
