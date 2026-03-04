@@ -1,4 +1,4 @@
-import "./mlp-info.css";
+import "./MlpInfo.css";
 
 export default function MlpInfo() {
 	return (

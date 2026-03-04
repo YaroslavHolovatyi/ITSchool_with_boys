@@ -4,7 +4,7 @@ import lastEpisodes from "../../../data/last-episodes";
 import FuturamaMain from "../Futurama/FuturamaMain";
 import CartoonCard from "./cartoon-card/CartoonCard";
 import InvincibleMain from "../Invincible/InvincibleMain";
-import MlpMain from "../mlp/mlp-main";
+import MlpMain from "../mlp/MlpMain";
 
 function Main() {
 	//Для CartoonCard Main це БАТЯ

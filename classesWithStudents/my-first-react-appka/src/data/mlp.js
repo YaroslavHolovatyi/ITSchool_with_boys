@@ -4,4 +4,5 @@ const Mlp = [
         episodeNumber: null,
         src: "Futurama/futurama-special.jpg",
     }];
+
 export default Mlp;
