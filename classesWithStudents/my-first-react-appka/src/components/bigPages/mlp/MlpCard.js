@@ -14,3 +14,4 @@ export default function MlpCard({ src, seasonNumber, episodeNumber }) {
         </div>
     );
 }
+//! Де структур изація
