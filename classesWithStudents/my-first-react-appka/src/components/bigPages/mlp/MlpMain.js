@@ -1,17 +1,17 @@
-import FuturamaCard from "../Futurama/FuturamaCard";
+import MlpInfo from "./MlpInfo";
+import MlpCard from "./MlpCard";
 import Mlp from "../../../data/mlp";
-import MlpInfo from "./mlp-info";
-import "./mlp-main.css";
+import "./MlpMain.css";
 
 export default function MlpMain() {
 	return (
 		<div>
 			<MlpInfo />
-			<div className="futurama-cards">
+			<div className="mlp-cards">
 				{Mlp.map((season) => (
-					<FuturamaCard
+					<MlpCard
 						key={season.seasonNumber}
-						seasonNumber={season.seasonNumber}
+						awsdasdasdasd={season.seasonNumber}
 						episodeNumber={season.episodeNumber}
 						src={season.src}
 					/>
