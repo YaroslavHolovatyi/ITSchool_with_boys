@@ -1,7 +1,6 @@
 import "./App.css";
 import Navbar from "./components/shared/navbar/Navbar";
 import Main from "./components/bigPages/main/Main";
-<<<<<<< HEAD
 import PageSection from "./components/bigPages/main/page-sections/PageSection";
 import lastEpisodes from "./data/last-episodes";
 import CartoonCard from "./components/bigPages/main/cartoon-card/CartoonCard";
@@ -10,14 +9,11 @@ import InvincibleMain from "./components/bigPages/Invincible/InvincibleMain";
 import MlpMain from "./components/bigPages/mlp/mlp-main";
 import Jija from "./components/bigPages/jija";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-=======
 import HelloWorld from "./students/Nazar/Components/Hello-W";
->>>>>>> daac7b5da86e03ac36e6ead993ca7f0a5ca3d14e
 
 function App() {
 	return (
 		<>
-<<<<<<< HEAD
 			<BrowserRouter>
 				<nav>
 					<Link to="/">Головна</Link> |{" "}
@@ -55,11 +51,10 @@ function App() {
 					<Route path="*" element={<h1>404 Not Found</h1>} />
 				</Routes>
 			</BrowserRouter>
-=======
+
 			<HelloWorld />
 			<Navbar />
 			<Main />
->>>>>>> daac7b5da86e03ac36e6ead993ca7f0a5ca3d14e
 		</>
 	);
 }
