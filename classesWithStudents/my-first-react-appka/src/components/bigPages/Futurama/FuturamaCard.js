@@ -1,19 +1,18 @@
 import "./FuturamaCard.css";
 
-export default function FuturamaCard({ seasonNumber, episodeNumber, src }) {
+export default function FuturamaCard(props) {
 	return (
 		<div className="cartoon-card">
 			<img
-				src={src}
-				alt={`Season ${seasonNumber} Episode ${episodeNumber}`}
+				src={props.src}
+				alt={`Season ${props.seasonNumber} Episode ${props.episodeNumber}`}
 			/>
 			<p>
-				{seasonNumber}
-				{episodeNumber ? <span>Episode {episodeNumber}</span> : null}
+				{props.awsdasdasdasd}
+				{props.episodeNumber ? (
+					<span>Episode {props.episodeNumber}</span>
+				) : null}
 			</p>
 		</div>
 	);
-}
-{
-	/*  */
 }

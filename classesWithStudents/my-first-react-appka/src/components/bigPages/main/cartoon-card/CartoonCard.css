@@ -1,0 +1,8 @@
+.cartoon-card {
+	max-width: 360px;
+}
+
+.last-episodes-container {
+	display: flex;
+	gap: 20px;
+}
