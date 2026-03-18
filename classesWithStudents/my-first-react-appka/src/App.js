@@ -1,14 +1,15 @@
 import "./App.css";
 import Navbar from "./components/shared/navbar/Navbar";
-import Main from "./components/bigPages/main/Main";
+
+import MainShow from "./students/denis sigma/js";
 
 function App() {
-	return (
-		<>
-			<Navbar />
-			<Main />
-		</>
-	);
+  return (
+    <>
+      <Navbar />
+      <MainShow />
+    </>
+  );
 }
 
 export default App;

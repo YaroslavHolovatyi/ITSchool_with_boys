@@ -1,1 +1,7 @@
-let pivo = "hello beer";
+function app() {
+  return (
+    <>
+      <h3>"hello world"</h3>
+    </>
+  );
+}
