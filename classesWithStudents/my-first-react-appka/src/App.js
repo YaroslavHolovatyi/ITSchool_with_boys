@@ -19,7 +19,7 @@ function App() {
 					<Link to="/">Головна</Link> |{" "}
 					<Link to="/futurama">Футурама</Link> |{" "}
 					<Link to="/invincible">Непереможний</Link> |{" "}
-					<Link to="/mlp">Мій маленький поні</Link> |{" "}
+					<Link to="/my-little-pony">Мій маленький поні</Link> |{" "}
 					<Link to="/jija">Денис</Link>
 				</nav>
 				<Routes>
@@ -46,7 +46,10 @@ function App() {
 						}
 					/>
 					<Route path="/invincible" element={<InvincibleMain />} />
-					<Route path="/mlp" element={<MlpMain />} />
+					<Route
+						path="/my-little-pony"
+						element={<MlpMain />}
+					/>
 					<Route path="/jija" element={<Jija name="Денис" />} />
 					<Route path="*" element={<h1>404 Not Found</h1>} />
 				</Routes>
