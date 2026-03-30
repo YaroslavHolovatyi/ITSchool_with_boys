@@ -1,5 +1,17 @@
 import "./App.css";
 import Navbar from "./components/shared/navbar/Navbar";
+<<<<<<< HEAD
+
+import MainShow from "./students/denis sigma/js";
+
+function App() {
+  return (
+    <>
+      <Navbar />
+      <MainShow />
+    </>
+  );
+=======
 import Main from "./components/bigPages/main/Main";
 import PageSection from "./components/bigPages/main/page-sections/PageSection";
 import lastEpisodes from "./data/last-episodes";
@@ -60,6 +72,7 @@ function App() {
 			<Main />
 		</>
 	);
+>>>>>>> 9e37de40ce525cb079200a9da6c9da0e23187c67 
 }
 
 export default App;
