@@ -1,0 +1,23 @@
+.animal-card {
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+.card-header {
+  display: flex;
+  justify-content: center;
+}
+
+.card-header img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.card-main {
+  padding: 10px;
+}
+.card-footer {
+  display: flex;
+  justify-content: center;
+}

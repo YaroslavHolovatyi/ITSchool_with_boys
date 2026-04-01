@@ -1,231 +1,279 @@
 const animals = [
-	{
-		id: 1,
-		title: "Snow Leopard",
-		textAbout:
-			"The snow leopard is a large cat native to the mountain ranges of Central and South Asia. Known for its beautiful, thick fur and elusive nature, it is often called the 'ghost of the mountains'. Snow leopards are listed as vulnerable, with fewer than 10,000 individuals remaining in the wild.",
-		imageSrc:
-			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxMWJ7c2OH8Q_LeZ0ExhlxXmvEdRzQcKGPE49PRYxCuKE-L3FWlFXeqtV68jUfI_XeOdFHng86cvQVKoXX3cN-LL3VHGy5Bnfcsra2Og&s=10",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Snow_leopard",
-	},
-	{
-		id: 2,
-		title: "Blue Poison Dart Frog",
-		textAbout:
-			"The blue poison dart frog is a species of poison dart frog found in Suriname. Its striking blue coloration warns predators of its highly toxic skin secretions. Indigenous people of the Amazon historically used its poison to coat blowgun darts for hunting.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Blue_Poison_Arrow_Frog_Dendrobates_azureus.jpg/1200px-Blue_Poison_Arrow_Frog_Dendrobates_azureus.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Blue_poison_dart_frog",
-	},
-	{
-		id: 3,
-		title: "Mandarin Duck",
-		textAbout:
-			"The mandarin duck is a perching duck species found in East Asia. The male is one of the most ornate and colorful ducks in the world, featuring multicolored plumage with distinctive orange 'sail' feathers on its back. In Chinese culture, mandarin ducks symbolize love and fidelity.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aix_galericulata.jpg/1200px-Aix_galericulata.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Mandarin_duck",
-	},
-	{
-		id: 4,
-		title: "Fennec Fox",
-		textAbout:
-			"The fennec fox is the world's smallest wild canid, native to the Sahara Desert and Sinai Peninsula. Its oversized ears serve multiple functions: they dissipate heat and help the fox locate prey underground. Fennec foxes are highly adapted to desert life, obtaining most of their water from food.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Vulpes_zerda_by_Raimund_Spekking.jpg/1200px-Vulpes_zerda_by_Raimund_Spekking.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Fennec_fox",
-	},
-	{
-		id: 5,
-		title: "Mantis Shrimp",
-		textAbout:
-			"Mantis shrimp are marine crustaceans known for their remarkably powerful claws, which can strike with the speed of a bullet. They possess the most complex eyes in the animal kingdom, capable of detecting 16 types of color receptors compared to the human eye's three.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Odontodactylus_scyllarus.jpg/1200px-Odontodactylus_scyllarus.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Mantis_shrimp",
-	},
-	{
-		id: 6,
-		title: "Axolotl",
-		textAbout:
-			"The axolotl is a Mexican walking fish that is actually a neotenic salamander, retaining its larval features throughout its adult life. It is famous for its extraordinary regenerative abilities — it can regrow entire limbs, its heart, and even parts of its brain. Critically endangered in the wild.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Axolotl_ganz.jpg/1200px-Axolotl_ganz.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Axolotl",
-	},
-	{
-		id: 7,
-		title: "Pangolin",
-		textAbout:
-			"Pangolins are mammals covered in large, protective keratin scales, making them the only known scaled mammals. When threatened, they curl into a tight ball. They are highly sought after in illegal wildlife trade, making them the most trafficked mammals in the world, pushing all eight species toward extinction.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Pangolin_basking_edit.jpg/1200px-Pangolin_basking_edit.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Pangolin",
-	},
-	{
-		id: 8,
-		title: "Narwhal",
-		textAbout:
-			"The narwhal is an Arctic whale famous for its long, spiral tusk, which is actually an elongated canine tooth that can grow up to 3 meters long. Often called the 'unicorn of the sea', the tusk is found mainly in males and contains millions of nerve endings used to sense ocean conditions.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Narwhal_pod_2.jpg/1200px-Narwhal_pod_2.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Narwhal",
-	},
-	{
-		id: 9,
-		title: "Golden Poison Frog",
-		textAbout:
-			"The golden poison frog is one of the most toxic animals on Earth. A single frog contains enough poison to kill ten adult humans. Despite its lethal skin, it is a small, beautiful frog found only in the rainforests of Colombia's Pacific coast. Indigenous Emberá people use its toxin on blowgun darts.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Phyllobates_terribilis_-_MHNT.jpg/1200px-Phyllobates_terribilis_-_MHNT.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Golden_poison_frog",
-	},
-	{
-		id: 10,
-		title: "Clouded Leopard",
-		textAbout:
-			"The clouded leopard is a wild cat found in the Himalayas and Southeast Asia. It has the largest canine teeth relative to body size of any living cat and is an exceptional climber, capable of hanging upside down from branches. Its cloud-like spots provide excellent camouflage in forest environments.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Clouded_leopard.jpg/1200px-Clouded_leopard.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Clouded_leopard",
-	},
-	{
-		id: 11,
-		title: "Mimic Octopus",
-		textAbout:
-			"The mimic octopus is a remarkable cephalopod discovered in 1998 in the Indo-Pacific. It can impersonate over 15 different species, including lionfish, flatfish, and sea snakes, by altering its body shape and movement patterns. This behavioral mimicry is unique among known animals.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Mimic_octopus_3.jpg/1200px-Mimic_octopus_3.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Mimic_octopus",
-	},
-	{
-		id: 12,
-		title: "Quokka",
-		textAbout:
-			"The quokka is a small marsupial native to southwestern Australia, most famously found on Rottnest Island. Known as 'the world's happiest animal', its facial anatomy gives it a permanent smile-like expression. Quokkas are fearless around humans and have become famous subjects for selfie photos.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Quokka_at_Rottnest.jpg/1200px-Quokka_at_Rottnest.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Quokka",
-	},
-	{
-		id: 13,
-		title: "Platypus",
-		textAbout:
-			"The platypus is one of the world's most bizarre mammals, native to eastern Australia. It is one of only five monotremes — mammals that lay eggs. It navigates and hunts using electroreception through its bill, detecting electrical fields produced by prey. Males have venomous spurs on their hind legs.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Platypus.jpg/1200px-Platypus.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Platypus",
-	},
-	{
-		id: 14,
-		title: "Leafy Sea Dragon",
-		textAbout:
-			"The leafy sea dragon is a marine fish related to seahorses, found along the southern coast of Australia. It has elaborate leaf-like appendages covering its body for camouflage, making it nearly invisible among kelp. Like seahorses, it is the male that carries and broods the eggs.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Leafy_seadragon_at_Monterey_Bay_Aquarium.jpg/1200px-Leafy_seadragon_at_Monterey_Bay_Aquarium.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Leafy_seadragon",
-	},
-	{
-		id: 15,
-		title: "Okapi",
-		textAbout:
-			"The okapi is a forest-dwelling mammal native to the Democratic Republic of Congo. Despite its zebra-like striped hindquarters, it is most closely related to the giraffe. It was unknown to science until 1901 and lives so secretively in dense rainforests that its population size remains difficult to estimate.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Okapi2.jpg/1200px-Okapi2.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Okapi",
-	},
-	{
-		id: 16,
-		title: "Blue-footed Booby",
-		textAbout:
-			"The blue-footed booby is a marine bird native to the eastern Pacific Ocean. Its striking blue feet are the result of carotenoid pigments from its fish diet. Males perform an elaborate high-stepping courtship dance to display their vivid feet to prospective mates. The bluer the feet, the healthier the bird.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Blue-footed_booby_portrait.jpg/1200px-Blue-footed_booby_portrait.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Blue-footed_booby",
-	},
-	{
-		id: 17,
-		title: "Saiga Antelope",
-		textAbout:
-			"The saiga is a critically endangered antelope with one of the most distinctive features in the animal kingdom: a bulbous, flexible nose that filters dust during summer migrations and warms cold air in winter. Once roaming across Eurasia in millions, populations collapsed due to poaching and mass mortality events.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Saiga_antelope_at_the_Stepnoi_Sanctuary.jpg/1200px-Saiga_antelope_at_the_Stepnoi_Sanctuary.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Saiga_antelope",
-	},
-	{
-		id: 18,
-		title: "Aye-aye",
-		textAbout:
-			"The aye-aye is a long-fingered lemur native to Madagascar. It uses a specialized elongated middle finger to tap on wood and listen for hollow spots, then gnaws a hole and extracts insect larvae — the only primate that uses echolocation to find food. In Malagasy folklore, it is considered a bad omen.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Aye-aye_%28Daubentonia_madagascariensis%29.jpg/1200px-Aye-aye_%28Daubentonia_madagascariensis%29.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Aye-aye",
-	},
-	{
-		id: 19,
-		title: "Fossa",
-		textAbout:
-			"The fossa is a cat-like carnivore endemic to Madagascar and the island's apex predator. Though related to mongooses, it resembles a puma with retractable claws and semi-retractable claws used for tree climbing. It is the primary predator of lemurs, capable of chasing prey both on the ground and through tree canopies.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Cryptoprocta_ferox.jpg/1200px-Cryptoprocta_ferox.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Fossa_(animal)",
-	},
-	{
-		id: 20,
-		title: "Shoebill",
-		textAbout:
-			"The shoebill is a tall bird native to tropical east Africa, named for its massive shoe-shaped bill. This prehistoric-looking bird can stand motionless for hours while hunting, then strikes with explosive speed to catch lungfish, eels, and even juvenile crocodiles. It is notorious for staring down humans without fear.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Balaeniceps_rex_-_Wilhelma_Zoo_-_Stuttgart%2C_Germany_-_20100809_003.jpg/1200px-Balaeniceps_rex_-_Wilhelma_Zoo_-_Stuttgart%2C_Germany_-_20100809_003.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Shoebill",
-	},
-	{
-		id: 21,
-		title: "Dumbo Octopus",
-		textAbout:
-			"The dumbo octopus is the deepest-living genus of octopus, found at depths of up to 7,000 meters. Its name comes from its two large ear-like fins, resembling Disney's Dumbo. Unlike other octopuses, it swallows its prey whole. It is one of the rarest and least understood octopus species in the world.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Grimpoteuthis_boylei.jpg/1200px-Grimpoteuthis_boylei.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Dumbo_octopus",
-	},
-	{
-		id: 22,
-		title: "Honey Badger",
-		textAbout:
-			"The honey badger is listed in the Guinness World Records as the world's most fearless animal. Native to Africa and Asia, it is known for its extraordinary ferocity, attacking animals many times its size. Its skin is extremely tough and loose, allowing it to twist around and bite attackers even when grabbed. It is resistant to many snake venoms.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Honey_badger.jpg/1200px-Honey_badger.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Honey_badger",
-	},
-	{
-		id: 23,
-		title: "Sunfish (Mola mola)",
-		textAbout:
-			"The ocean sunfish, or Mola mola, is the heaviest known bony fish in the world, reaching weights of over 2,300 kg. It looks like a giant swimming head, having lost its tail through evolution and replaced it with a rudder-like structure. Despite its size, it feeds mainly on jellyfish and is completely harmless.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Ocean_sunfish_noaa.jpg/1200px-Ocean_sunfish_noaa.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Ocean_sunfish",
-	},
-	{
-		id: 24,
-		title: "Proboscis Monkey",
-		textAbout:
-			"The proboscis monkey is an endangered primate endemic to Borneo, famous for the male's enormous, pendulous nose, which can exceed 10 cm in length. The nose amplifies vocalizations and plays a role in attracting mates. These monkeys are excellent swimmers and have partially webbed feet, often crossing rivers to escape predators.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Proboscis_Monkey_in_Sabah%2C_Malaysia.jpg/1200px-Proboscis_Monkey_in_Sabah%2C_Malaysia.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Proboscis_monkey",
-	},
-	{
-		id: 25,
-		title: "Tardigrade",
-		textAbout:
-			"Tardigrades, also called water bears, are microscopic animals less than 1 mm long. They are considered the most resilient animals ever discovered, capable of surviving extreme conditions: the vacuum of outer space, temperatures from -272°C to 150°C, high radiation, and pressures six times greater than the deepest ocean.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/SEM_image_of_Milnesium_tardigradum_in_active_state_-_journal.pone.0045682.g001-2.png/1200px-SEM_image_of_Milnesium_tardigradum_in_active_state_-_journal.pone.0045682.g001-2.png",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Tardigrade",
-	},
+  {
+    id: 1,
+    title: "Snow Leopard",
+    textForCard: "A rare mountain cat known as the 'ghost of the mountains'.",
+    textForSidebar:
+      "The snow leopard is a large cat native to the mountain ranges of Central and South Asia. Known for its thick fur and elusive behavior, it thrives in cold, rugged terrain and remains one of the most mysterious big cats.",
+    whereLives: "Central and South Asia (mountains)",
+    imageSrc:
+      "https://images.unsplash.com/photo-1456926631375-92c8ce872def?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Snow_leopard",
+  },
+  {
+    id: 2,
+    title: "Blue Poison Dart Frog",
+    textForCard: "A bright blue frog with highly toxic skin.",
+    textForSidebar:
+      "This frog is known for its vibrant blue color and toxic skin secretions. Native to Suriname, it uses its coloration to warn predators of its danger.",
+    whereLives: "Suriname (South America)",
+    imageSrc:
+      "https://images.unsplash.com/photo-1559715541-5daf8a0296d0?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Blue_poison_dart_frog",
+  },
+  {
+    id: 3,
+    title: "Mandarin Duck",
+    textForCard: "One of the most colorful ducks in the world.",
+    textForSidebar:
+      "The mandarin duck is famous for its vibrant feathers and symbolic meaning of love in Asian cultures. Males display stunning colors to attract mates.",
+    whereLives: "East Asia",
+    imageSrc:
+      "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Mandarin_duck",
+  },
+  {
+    id: 4,
+    title: "Fennec Fox",
+    textForCard: "The smallest fox with oversized ears.",
+    textForSidebar:
+      "The fennec fox lives in desert regions and uses its large ears to dissipate heat and locate prey underground.",
+    whereLives: "Sahara Desert",
+    imageSrc:
+      "https://images.unsplash.com/photo-1474511320723-9a56873867b5?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Fennec_fox",
+  },
+  {
+    id: 5,
+    title: "Mantis Shrimp",
+    textForCard: "A marine animal with an incredibly powerful punch.",
+    textForSidebar:
+      "Mantis shrimp can strike with extreme speed and have advanced vision capable of detecting many color spectrums beyond human ability.",
+    whereLives: "Tropical oceans",
+    imageSrc:
+      "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Mantis_shrimp",
+  },
+  {
+    id: 6,
+    title: "Axolotl",
+    textForCard: "A salamander that regenerates limbs.",
+    textForSidebar:
+      "Axolotls are unique amphibians that never fully mature and can regenerate limbs, organs, and even parts of their brain.",
+    whereLives: "Mexico",
+    imageSrc:
+      "https://images.unsplash.com/photo-1621325697-5b3e3f7a00c2?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Axolotl",
+  },
+  {
+    id: 7,
+    title: "Pangolin",
+    textForCard: "The only mammal covered in scales.",
+    textForSidebar:
+      "Pangolins protect themselves by curling into a ball. Sadly, they are the most trafficked mammals in the world.",
+    whereLives: "Africa and Asia",
+    imageSrc:
+      "https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Pangolin",
+  },
+  {
+    id: 8,
+    title: "Narwhal",
+    textForCard: "The 'unicorn of the sea' with a long tusk.",
+    textForSidebar:
+      "Narwhals are Arctic whales known for their spiral tusk, which is actually a tooth used for sensing the environment.",
+    whereLives: "Arctic waters",
+    imageSrc:
+      "https://images.unsplash.com/photo-1568430462989-44163eb1752f?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Narwhal",
+  },
+  {
+    id: 9,
+    title: "Golden Poison Frog",
+    textForCard: "One of the most toxic animals on Earth.",
+    textForSidebar:
+      "This small frog carries enough toxin to kill multiple humans. Its bright color serves as a warning to predators.",
+    whereLives: "Colombia",
+    imageSrc:
+      "https://images.unsplash.com/photo-1551189014-fe516b1a577a?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Golden_poison_frog",
+  },
+  {
+    id: 10,
+    title: "Clouded Leopard",
+    textForCard: "A tree-climbing wild cat with cloud-like spots.",
+    textForSidebar:
+      "This elusive cat is an excellent climber and has the largest canine teeth relative to body size among cats.",
+    whereLives: "Southeast Asia",
+    imageSrc:
+      "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Clouded_leopard",
+  },
+  {
+    id: 11,
+    title: "Mimic Octopus",
+    textForCard: "An octopus that imitates other animals.",
+    textForSidebar:
+      "The mimic octopus can transform its appearance and behavior to imitate other species for protection.",
+    whereLives: "Indo-Pacific",
+    imageSrc:
+      "https://images.unsplash.com/photo-1545671913-b89ac1b4ac10?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Mimic_octopus",
+  },
+  {
+    id: 12,
+    title: "Quokka",
+    textForCard: "Known as the world's happiest animal.",
+    textForSidebar:
+      "Quokkas are friendly marsupials with a natural smile-like expression, often interacting with humans.",
+    whereLives: "Australia",
+    imageSrc:
+      "https://images.unsplash.com/photo-1529419412599-7bb870e11810?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Quokka",
+  },
+  {
+    id: 13,
+    title: "Platypus",
+    textForCard: "An egg-laying mammal with a duck bill.",
+    textForSidebar:
+      "The platypus uses electroreception to hunt underwater and is one of the few venomous mammals.",
+    whereLives: "Australia",
+    imageSrc:
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Platypus",
+  },
+  {
+    id: 14,
+    title: "Leafy Sea Dragon",
+    textForCard: "A fish that looks like floating seaweed.",
+    textForSidebar:
+      "This marine species uses leaf-like appendages for camouflage among kelp.",
+    whereLives: "Southern Australia",
+    imageSrc:
+      "https://images.unsplash.com/photo-1596025812027-61a8983a90b4?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Leafy_seadragon",
+  },
+  {
+    id: 15,
+    title: "Okapi",
+    textForCard: "A zebra-striped relative of the giraffe.",
+    textForSidebar:
+      "The okapi lives in dense forests and was unknown to science until the 20th century.",
+    whereLives: "Congo",
+    imageSrc:
+      "https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Okapi",
+  },
+  {
+    id: 16,
+    title: "Blue-footed Booby",
+    textForCard: "A bird famous for its bright blue feet.",
+    textForSidebar:
+      "Males perform dances to show off their feet, which indicate health and fitness.",
+    whereLives: "Pacific Ocean coasts",
+    imageSrc:
+      "https://images.unsplash.com/photo-1591198619664-f0290d58c347?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Blue-footed_booby",
+  },
+  {
+    id: 17,
+    title: "Saiga Antelope",
+    textForCard: "An antelope with a unique bulbous nose.",
+    textForSidebar:
+      "Its nose helps filter dust and regulate air temperature in extreme climates.",
+    whereLives: "Central Asia",
+    imageSrc:
+      "https://images.unsplash.com/photo-1504173010664-32509aeebb62?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Saiga_antelope",
+  },
+  {
+    id: 18,
+    title: "Aye-aye",
+    textForCard: "A nocturnal lemur with a long finger.",
+    textForSidebar:
+      "It uses echolocation-like tapping to locate insects inside trees.",
+    whereLives: "Madagascar",
+    imageSrc:
+      "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Aye-aye",
+  },
+  {
+    id: 19,
+    title: "Fossa",
+    textForCard: "The top predator of Madagascar.",
+    textForSidebar:
+      "The fossa hunts lemurs and moves easily through trees and ground.",
+    whereLives: "Madagascar",
+    imageSrc:
+      "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Fossa_(animal)",
+  },
+  {
+    id: 20,
+    title: "Shoebill",
+    textForCard: "A bird with a massive shoe-shaped beak.",
+    textForSidebar:
+      "It hunts by standing still for long periods and striking quickly.",
+    whereLives: "East Africa",
+    imageSrc:
+      "https://images.unsplash.com/photo-1590418606746-018840f9ced6?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Shoebill",
+  },
+  {
+    id: 21,
+    title: "Dumbo Octopus",
+    textForCard: "A deep-sea octopus with ear-like fins.",
+    textForSidebar:
+      "It lives at extreme ocean depths and moves gracefully using its fins.",
+    whereLives: "Deep ocean",
+    imageSrc:
+      "https://images.unsplash.com/photo-1591025207163-942350e47db2?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Dumbo_octopus",
+  },
+  {
+    id: 22,
+    title: "Honey Badger",
+    textForCard: "One of the most fearless animals.",
+    textForSidebar:
+      "It is known for attacking animals larger than itself and surviving snake bites.",
+    whereLives: "Africa and Asia",
+    imageSrc:
+      "https://images.unsplash.com/photo-1578393098337-5594cce112b5?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Honey_badger",
+  },
+  {
+    id: 23,
+    title: "Sunfish",
+    textForCard: "The heaviest bony fish in the world.",
+    textForSidebar:
+      "Despite its size, it feeds mainly on jellyfish and is harmless.",
+    whereLives: "Oceans worldwide",
+    imageSrc:
+      "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Ocean_sunfish",
+  },
+  {
+    id: 24,
+    title: "Proboscis Monkey",
+    textForCard: "A monkey with a large distinctive nose.",
+    textForSidebar:
+      "The nose helps amplify sounds and attract mates. It is also a strong swimmer.",
+    whereLives: "Borneo",
+    imageSrc:
+      "https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Proboscis_monkey",
+  },
+  {
+    id: 25,
+    title: "Tardigrade",
+    textForCard: "A microscopic animal that survives extreme conditions.",
+    textForSidebar:
+      "Tardigrades can survive space, radiation, and extreme temperatures, making them one of the toughest organisms.",
+    whereLives: "Everywhere (water, moss, soil)",
+    imageSrc:
+      "https://images.unsplash.com/photo-1617369120004-4fc70312c5e6?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Tardigrade",
+  },
 ];
 
 export default animals;
-
-// DB - DataBase/ БД - База даних

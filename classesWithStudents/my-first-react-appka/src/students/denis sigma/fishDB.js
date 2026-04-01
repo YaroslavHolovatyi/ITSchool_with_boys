@@ -1,272 +1,334 @@
 const fish = [
-	{
-		id: 1,
-		title: "Atlantic Salmon",
-		textAbout:
-			"The Atlantic salmon is a species of ray-finned fish in the family Salmonidae. It is found in the northern Atlantic Ocean and in rivers that flow into the North Atlantic.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Atlantic_salmon_Atlantic_salmon_Salmo_salar.jpg/320px-Atlantic_salmon_Atlantic_salmon_Salmo_salar.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Atlantic_salmon",
-	},
-	{
-		id: 2,
-		title: "Clownfish",
-		textAbout:
-			"The clownfish is a small brightly colored fish known for its symbiotic relationship with sea anemones. All clownfish are born male and some transition to female.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Clown_fish_in_the_shallows.jpg/320px-Clown_fish_in_the_shallows.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Clownfish",
-	},
-	{
-		id: 3,
-		title: "Atlantic Cod",
-		textAbout:
-			"The Atlantic cod is a benthopelagic fish found in the colder waters of the North Atlantic Ocean. It is one of the most commercially important fish and the classic ingredient in traditional fish and chips.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Atlantic_cod.jpg/320px-Atlantic_cod.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Atlantic_cod",
-	},
-	{
-		id: 4,
-		title: "Bluefin Tuna",
-		textAbout:
-			"The bluefin tuna is among the largest, fastest, and most highly prized fish in the world. Native to the Atlantic Ocean, it can swim up to 43 mph and is highly sought after in the sushi market.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Pacific_bluefin_tuna.jpg/320px-Pacific_bluefin_tuna.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Atlantic_bluefin_tuna",
-	},
-	{
-		id: 5,
-		title: "Great White Shark",
-		textAbout:
-			"The great white shark is found in the coastal surface waters of all major oceans. It is the world's largest known predatory fish, reaching lengths of over 6 meters.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/White_shark.jpg/320px-White_shark.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Great_white_shark",
-	},
-	{
-		id: 6,
-		title: "Seahorse",
-		textAbout:
-			"Seahorses are small marine fish of the genus Hippocampus, notable for being the only animal species where the male carries the young during pregnancy.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/A_pair_of_seahorses.jpg/320px-A_pair_of_seahorses.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Seahorse",
-	},
-	{
-		id: 7,
-		title: "Swordfish",
-		textAbout:
-			"The swordfish is a large, highly migratory predatory fish characterized by a long, flat, pointed bill. They are a popular sport fish and can weigh up to 650 kg.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Swordfish_illustration.jpg/320px-Swordfish_illustration.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Swordfish",
-	},
-	{
-		id: 8,
-		title: "Manta Ray",
-		textAbout:
-			"Manta rays are large cartilaginous fish related to sharks. They are the largest rays in the world, with wingspans reaching up to 7 meters, and are known for their graceful movement through the ocean.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Manta_ray_at_cleaning_station.jpg/320px-Manta_ray_at_cleaning_station.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Manta_ray",
-	},
-	{
-		id: 9,
-		title: "Piranha",
-		textAbout:
-			"Piranhas are freshwater fish native to South American rivers, known for their sharp teeth and powerful jaws. Despite their fearsome reputation, most species are omnivorous scavengers.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Piranha.jpg/320px-Piranha.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Piranha",
-	},
-	{
-		id: 10,
-		title: "Anglerfish",
-		textAbout:
-			"The anglerfish is a bony fish named for its characteristic mode of predation, using a fleshy growth from its head as a lure. It lives in the deep ocean and is one of the most bizarre-looking creatures on Earth.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Linophryne_arborifera.jpg/320px-Linophryne_arborifera.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Anglerfish",
-	},
-	{
-		id: 11,
-		title: "Halibut",
-		textAbout:
-			"Halibut are the largest flatfish in the ocean, capable of growing over 2.5 meters long and weighing more than 300 kg. They are found in the North Pacific and North Atlantic oceans and are prized for their mild white flesh.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Pacific_halibut_NOAA.jpg/320px-Pacific_halibut_NOAA.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Halibut",
-	},
-	{
-		id: 12,
-		title: "Moray Eel",
-		textAbout:
-			"Moray eels are a family of eels found in both tropical and temperate seas. They are known for their snake-like appearance, powerful bite, and a second set of jaws in their throat used to grip prey.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Gymnothorax_javanicus_2.jpg/320px-Gymnothorax_javanicus_2.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Moray_eel",
-	},
-	{
-		id: 13,
-		title: "Flying Fish",
-		textAbout:
-			"Flying fish are tropical and subtropical marine fish with large, wing-like pectoral fins that allow them to glide above the water surface for distances of up to 200 meters to escape predators.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Exocoetus_obtusirostris.jpg/320px-Exocoetus_obtusirostris.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Flying_fish",
-	},
-	{
-		id: 14,
-		title: "Pufferfish",
-		textAbout:
-			"Pufferfish are known for their ability to inflate into a ball-like shape when threatened. They are among the most poisonous vertebrates in the world, yet are considered a delicacy in Japan.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Tetraodon_nigroviridis_1.jpg/320px-Tetraodon_nigroviridis_1.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Pufferfish",
-	},
-	{
-		id: 15,
-		title: "Lionfish",
-		textAbout:
-			"The lionfish is a venomous marine fish native to the Indo-Pacific. Recognizable by its dramatic striped appearance and long, spiky fins, it has become an invasive species in the Atlantic Ocean and Caribbean Sea.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Lionfish_in_Java.jpg/320px-Lionfish_in_Java.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Lionfish",
-	},
-	{
-		id: 16,
-		title: "Rainbow Trout",
-		textAbout:
-			"The rainbow trout is a trout and species of salmonid native to cold-water tributaries of the Pacific Ocean in Asia and North America. It is one of the most widely fished freshwater species in the world.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Rainbow_trout.png/320px-Rainbow_trout.png",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Rainbow_trout",
-	},
-	{
-		id: 17,
-		title: "Barracuda",
-		textAbout:
-			"The barracuda is a large, predatory ray-finned fish known for its fearsome appearance and powerful bite. Found in tropical and subtropical oceans, it can reach speeds of up to 43 km/h.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Barracuda_laban.jpg/320px-Barracuda_laban.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Barracuda",
-	},
-	{
-		id: 18,
-		title: "Hammerhead Shark",
-		textAbout:
-			"Hammerhead sharks are a group of sharks named for the unusual and distinctive structure of their heads, which are flattened and laterally extended into a hammer shape, enhancing their vision and electroreception.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Scalloped_hammerhead_shark.jpg/320px-Scalloped_hammerhead_shark.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Hammerhead_shark",
-	},
-	{
-		id: 19,
-		title: "Oarfish",
-		textAbout:
-			"The oarfish is the world's longest bony fish, capable of reaching lengths of 11 meters or more. It inhabits the deep ocean and is rarely seen alive, likely inspiring many historical sea serpent legends.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Regalecus_glesne.jpg/320px-Regalecus_glesne.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Oarfish",
-	},
-	{
-		id: 20,
-		title: "Catfish",
-		textAbout:
-			"Catfish are a diverse group of ray-finned fish named for their prominent barbels, which resemble cat whiskers. Found in freshwater environments worldwide, they are important both commercially and as sport fish.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Catfish_whiskers.jpg/320px-Catfish_whiskers.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Catfish",
-	},
-	{
-		id: 21,
-		title: "Goldfish",
-		textAbout:
-			"The goldfish is one of the earliest fish to be domesticated, kept as a pet for over a thousand years. Native to East Asia, it was selectively bred from wild carp and comes in a wide variety of shapes and colors.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Common_goldfish.jpg/320px-Common_goldfish.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Goldfish",
-	},
-	{
-		id: 22,
-		title: "Blobfish",
-		textAbout:
-			"The blobfish is a deep-sea fish native to the waters off Australia and New Zealand. Its gelatinous appearance, well-known from photos taken at the surface, is a result of decompression from its extreme deep-water habitat.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Psychrolutes_marcidus.jpg/320px-Psychrolutes_marcidus.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Blobfish",
-	},
-	{
-		id: 23,
-		title: "Stonefish",
-		textAbout:
-			"The stonefish is the most venomous fish in the world, found in the coastal regions of the Indo-Pacific. It camouflages itself as a rock or coral on the seafloor and delivers venom through spines on its back.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Synanceia_verrucosa_2.jpg/320px-Synanceia_verrucosa_2.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Stonefish",
-	},
-	{
-		id: 24,
-		title: "Parrotfish",
-		textAbout:
-			"Parrotfish are a group of marine fish found in tropical and subtropical oceans. They are named for their beak-like teeth and bright colors, and play a crucial role in producing the white sand found on many tropical beaches.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Stoplight-parrotfish.jpg/320px-Stoplight-parrotfish.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Parrotfish",
-	},
-	{
-		id: 25,
-		title: "Electric Eel",
-		textAbout:
-			"The electric eel is a South American electric fish and the only species in its genus. Despite its name, it is more closely related to carp than true eels, and can generate electric shocks of up to 860 volts.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Electric_eel_-_Electrophorus_electricus_-_NHMUK.jpg/320px-Electric_eel_-_Electrophorus_electricus_-_NHMUK.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Electric_eel",
-	},
-	{
-		id: 26,
-		title: "Blue Tang",
-		textAbout:
-			"The blue tang is a brightly colored marine fish found in the reefs of the Indo-Pacific. It is a popular aquarium fish and gained worldwide fame as the character Dory in the Pixar film Finding Nemo.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Paracanthurus_hepatus_-_aquarium.jpg/320px-Paracanthurus_hepatus_-_aquarium.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Paracanthurus",
-	},
-	{
-		id: 27,
-		title: "Whale Shark",
-		textAbout:
-			"The whale shark is the largest fish in the world, reaching lengths of up to 12 meters. Despite its enormous size, it is a filter feeder, subsisting mainly on plankton, and poses no danger to humans.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Whale_shark_Georgia_aquarium.jpg/320px-Whale_shark_Georgia_aquarium.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Whale_shark",
-	},
-	{
-		id: 28,
-		title: "Mackerel",
-		textAbout:
-			"Mackerel are fast-swimming pelagic fish found in both temperate and tropical seas. They travel in large schools and are an important food fish known for their rich, oily flesh high in omega-3 fatty acids.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Scomber_scombrus.jpg/320px-Scomber_scombrus.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Mackerel",
-	},
-	{
-		id: 29,
-		title: "Coelacanth",
-		textAbout:
-			"The coelacanth is a rare order of fish that was believed to be extinct until rediscovered in 1938. Often called a living fossil, it has remained largely unchanged for over 400 million years and breathes using a vestigial lung.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Coelacanth-bgiu.png/320px-Coelacanth-bgiu.png",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Coelacanth",
-	},
-	{
-		id: 30,
-		title: "Marlin",
-		textAbout:
-			"The marlin is a large ocean fish with a spear-like snout and a long, rigid dorsal fin. Among the fastest fish in the ocean, marlins are a prized target for sport fishermen and can weigh over 900 kg.",
-		imageSrc:
-			"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Blue_marlin.jpg/320px-Blue_marlin.jpg",
-		wikipediaPageSrc: "https://en.wikipedia.org/wiki/Marlin",
-	},
+  {
+    id: 1,
+    title: "Atlantic Salmon",
+    textForCard: "A migratory fish that travels between rivers and the ocean.",
+    textForSidebar:
+      "The Atlantic salmon is a species of ray-finned fish found in the northern Atlantic Ocean and rivers flowing into it. It is known for its long migrations between freshwater and saltwater habitats.",
+    whereLives: "North Atlantic Ocean & rivers",
+    imageSrc:
+      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Atlantic_salmon",
+  },
+  {
+    id: 2,
+    title: "Clownfish",
+    textForCard: "A colorful fish that lives with sea anemones.",
+    textForSidebar:
+      "Clownfish have a symbiotic relationship with sea anemones, gaining protection while providing nutrients. All are born male, and some change to female.",
+    whereLives: "Coral reefs (Indo-Pacific)",
+    imageSrc:
+      "https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Clownfish",
+  },
+  {
+    id: 3,
+    title: "Atlantic Cod",
+    textForCard: "A key commercial fish used in many dishes.",
+    textForSidebar:
+      "Atlantic cod is a cold-water fish important for global fisheries. It has been a staple food source and is widely used in traditional dishes like fish and chips.",
+    whereLives: "North Atlantic Ocean",
+    imageSrc:
+      "https://images.unsplash.com/photo-1559715745-e1b33a271c8f?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Atlantic_cod",
+  },
+  {
+    id: 4,
+    title: "Bluefin Tuna",
+    textForCard: "A fast and valuable ocean predator.",
+    textForSidebar:
+      "Bluefin tuna are among the largest and fastest fish, capable of high speeds. They are highly prized in the sushi industry.",
+    whereLives: "Atlantic Ocean",
+    imageSrc:
+      "https://images.unsplash.com/photo-1510023115878-e9cf44d0a95a?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Atlantic_bluefin_tuna",
+  },
+  {
+    id: 5,
+    title: "Great White Shark",
+    textForCard: "The largest predatory fish in the ocean.",
+    textForSidebar:
+      "Great white sharks are apex predators found worldwide. They can grow over 6 meters long and are known for their power and hunting skills.",
+    whereLives: "Oceans worldwide (coastal)",
+    imageSrc:
+      "https://images.unsplash.com/photo-1560275619-4662e36fa65c?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Great_white_shark",
+  },
+  {
+    id: 6,
+    title: "Seahorse",
+    textForCard: "A fish where males carry the babies.",
+    textForSidebar:
+      "Seahorses are unique fish where males incubate eggs in a pouch. They swim upright and use camouflage to avoid predators.",
+    whereLives: "Shallow coastal waters",
+    imageSrc:
+      "https://images.unsplash.com/photo-1596025812027-61a8983a90b4?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Seahorse",
+  },
+  {
+    id: 7,
+    title: "Swordfish",
+    textForCard: "A large fish with a long sword-like bill.",
+    textForSidebar:
+      "Swordfish are powerful predators known for their speed and distinctive long bill used to slash prey.",
+    whereLives: "Tropical & temperate oceans",
+    imageSrc:
+      "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Swordfish",
+  },
+  {
+    id: 8,
+    title: "Manta Ray",
+    textForCard: "A giant graceful ocean glider.",
+    textForSidebar:
+      "Manta rays are the largest rays, known for their wing-like fins and graceful swimming style.",
+    whereLives: "Tropical oceans",
+    imageSrc:
+      "https://images.unsplash.com/photo-1518877593221-1f28583780b4?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Manta_ray",
+  },
+  {
+    id: 9,
+    title: "Piranha",
+    textForCard: "A fish known for its sharp teeth.",
+    textForSidebar:
+      "Piranhas are freshwater fish with powerful jaws. Despite their reputation, many species are scavengers.",
+    whereLives: "South American rivers",
+    imageSrc:
+      "https://images.unsplash.com/photo-1563461660947-507ef49e9c47?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Piranha",
+  },
+  {
+    id: 10,
+    title: "Anglerfish",
+    textForCard: "A deep-sea fish that uses a glowing lure.",
+    textForSidebar:
+      "Anglerfish attract prey using a bioluminescent lure. They live in deep ocean environments.",
+    whereLives: "Deep ocean",
+    imageSrc:
+      "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Anglerfish",
+  },
+  {
+    id: 11,
+    title: "Halibut",
+    textForCard: "A giant flatfish of the ocean floor.",
+    textForSidebar:
+      "Halibut are among the largest flatfish and are valued for their meat.",
+    whereLives: "North Atlantic & Pacific",
+    imageSrc:
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Halibut",
+  },
+  {
+    id: 12,
+    title: "Moray Eel",
+    textForCard: "An eel with a powerful bite.",
+    textForSidebar:
+      "Moray eels have a second set of jaws to capture prey and are common in reef environments.",
+    whereLives: "Tropical seas",
+    imageSrc:
+      "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Moray_eel",
+  },
+  {
+    id: 13,
+    title: "Flying Fish",
+    textForCard: "A fish that glides above water.",
+    textForSidebar:
+      "Flying fish escape predators by leaping and gliding over the ocean surface.",
+    whereLives: "Tropical oceans",
+    imageSrc:
+      "https://images.unsplash.com/photo-1504124016-78ba12e25e90?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Flying_fish",
+  },
+  {
+    id: 14,
+    title: "Pufferfish",
+    textForCard: "A fish that inflates when threatened.",
+    textForSidebar:
+      "Pufferfish can inflate and contain powerful toxins, making them both dangerous and fascinating.",
+    whereLives: "Tropical & subtropical waters",
+    imageSrc:
+      "https://images.unsplash.com/photo-1571752726703-5e7d1f6a986d?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Pufferfish",
+  },
+  {
+    id: 15,
+    title: "Lionfish",
+    textForCard: "A venomous fish with striking fins.",
+    textForSidebar:
+      "Lionfish are known for their beauty and venomous spines. They are invasive in some regions.",
+    whereLives: "Indo-Pacific & Atlantic",
+    imageSrc:
+      "https://images.unsplash.com/photo-1544552866-d3ed42536cfd?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Lionfish",
+  },
+  {
+    id: 16,
+    title: "Rainbow Trout",
+    textForCard: "A popular freshwater sport fish.",
+    textForSidebar:
+      "Rainbow trout are widely distributed and valued for fishing and aquaculture.",
+    whereLives: "Cold freshwater rivers & lakes",
+    imageSrc:
+      "https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Rainbow_trout",
+  },
+  {
+    id: 17,
+    title: "Barracuda",
+    textForCard: "A fast predator with sharp teeth.",
+    textForSidebar:
+      "Barracudas are aggressive hunters known for speed and sudden attacks.",
+    whereLives: "Tropical oceans",
+    imageSrc:
+      "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Barracuda",
+  },
+  {
+    id: 18,
+    title: "Hammerhead Shark",
+    textForCard: "A shark with a uniquely shaped head.",
+    textForSidebar:
+      "Hammerhead sharks use their wide heads to improve vision and detect prey.",
+    whereLives: "Warm oceans",
+    imageSrc:
+      "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Hammerhead_shark",
+  },
+  {
+    id: 19,
+    title: "Oarfish",
+    textForCard: "The longest bony fish in the ocean.",
+    textForSidebar:
+      "Oarfish live in deep waters and are rarely seen, inspiring sea monster legends.",
+    whereLives: "Deep ocean",
+    imageSrc:
+      "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Oarfish",
+  },
+  {
+    id: 20,
+    title: "Catfish",
+    textForCard: "A fish with whisker-like barbels.",
+    textForSidebar:
+      "Catfish are found worldwide in freshwater and are important for fishing industries.",
+    whereLives: "Freshwater worldwide",
+    imageSrc:
+      "https://images.unsplash.com/photo-1559715745-e1b33a271c8f?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Catfish",
+  },
+  {
+    id: 21,
+    title: "Goldfish",
+    textForCard: "A popular domesticated aquarium fish.",
+    textForSidebar:
+      "Goldfish were bred from carp and have been kept as pets for centuries.",
+    whereLives: "Aquariums & ponds",
+    imageSrc:
+      "https://images.unsplash.com/photo-1520990877573-bcf25e0b1e7a?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Goldfish",
+  },
+  {
+    id: 22,
+    title: "Blobfish",
+    textForCard: "A deep-sea fish with a gelatinous body.",
+    textForSidebar:
+      "Blobfish appear unusual due to pressure differences when brought to the surface.",
+    whereLives: "Deep ocean (Australia & NZ)",
+    imageSrc:
+      "https://images.unsplash.com/photo-1468581264429-2548ef9eb732?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Blobfish",
+  },
+  {
+    id: 23,
+    title: "Stonefish",
+    textForCard: "The most venomous fish in the world.",
+    textForSidebar:
+      "Stonefish camouflage as rocks and can deliver extremely potent venom.",
+    whereLives: "Indo-Pacific coastal waters",
+    imageSrc:
+      "https://images.unsplash.com/photo-1546026423-cc4642628d2b?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Stonefish",
+  },
+  {
+    id: 24,
+    title: "Parrotfish",
+    textForCard: "A colorful fish that creates sand.",
+    textForSidebar:
+      "Parrotfish grind coral into sand, contributing to tropical beaches.",
+    whereLives: "Tropical reefs",
+    imageSrc:
+      "https://images.unsplash.com/photo-1582967788606-a171c1080cb0?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Parrotfish",
+  },
+  {
+    id: 25,
+    title: "Electric Eel",
+    textForCard: "A fish that generates electricity.",
+    textForSidebar:
+      "Electric eels can produce strong shocks to hunt and defend themselves.",
+    whereLives: "South American rivers",
+    imageSrc:
+      "https://images.unsplash.com/photo-1504124016-78ba12e25e90?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Electric_eel",
+  },
+  {
+    id: 26,
+    title: "Blue Tang",
+    textForCard: "A bright blue reef fish.",
+    textForSidebar:
+      "Blue tangs are popular aquarium fish and known from animated films.",
+    whereLives: "Indo-Pacific reefs",
+    imageSrc:
+      "https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Paracanthurus",
+  },
+  {
+    id: 27,
+    title: "Whale Shark",
+    textForCard: "The largest fish in the world.",
+    textForSidebar:
+      "Whale sharks are gentle giants that feed on plankton and pose no threat to humans.",
+    whereLives: "Warm oceans worldwide",
+    imageSrc:
+      "https://images.unsplash.com/photo-1560275619-4662e36fa65c?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Whale_shark",
+  },
+  {
+    id: 28,
+    title: "Mackerel",
+    textForCard: "A fast-swimming oily fish.",
+    textForSidebar:
+      "Mackerel travel in large schools and are valued for their nutritional content.",
+    whereLives: "Temperate & tropical seas",
+    imageSrc:
+      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Mackerel",
+  },
+  {
+    id: 29,
+    title: "Coelacanth",
+    textForCard: "A living fossil fish.",
+    textForSidebar:
+      "Coelacanths were thought extinct until rediscovered and have ancient evolutionary traits.",
+    whereLives: "Deep ocean (Africa)",
+    imageSrc:
+      "https://images.unsplash.com/photo-1468581264429-2548ef9eb732?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Coelacanth",
+  },
+  {
+    id: 30,
+    title: "Marlin",
+    textForCard: "A fast fish with a spear-like bill.",
+    textForSidebar:
+      "Marlins are among the fastest ocean fish and are prized in sport fishing.",
+    whereLives: "Open ocean",
+    imageSrc:
+      "https://images.unsplash.com/photo-1510023115878-e9cf44d0a95a?w=800&q=80",
+    wikipediaPageSrc: "https://en.wikipedia.org/wiki/Marlin",
+  },
 ];
+
+export default fish;

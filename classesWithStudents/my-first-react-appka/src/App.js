@@ -9,7 +9,7 @@ import "./App.css";
 // import MlpMain from "./components/bigPages/mlp/mlp-main";
 // import Jija from "./components/bigPages/jija";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import DenisMain from "./students/denis sigma/main";
+import DenisMain from "./main";
 // import HelloWorld from "./students/Nazar/Components/Hello-W";
 
 function App() {

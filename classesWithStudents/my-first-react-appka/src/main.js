@@ -1,7 +1,7 @@
-import animals from "./animalsDB";
-import fish from "./fishDB";
+import animals from "./students/denis sigma/animalsDB";
+import fish from "./students/denis sigma/fishDB";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import SectionForImages from "./components/sectioncomponent";
+import SectionForImages from "./students/denis sigma/components/sectioncomponent";
 
 export default function DenisMain() {
   return (
@@ -13,8 +13,13 @@ export default function DenisMain() {
           <Link to="/animalsDB">Animals</Link>{" "}
         </nav>
         <Routes>
-          <Route path="/fishDB" element={<SectionForImages dbs={fish} />} />
           <Route
+            className="fish-nav"
+            path="/fishDB"
+            element={<SectionForImages dbs={fish} />}
+          />
+          <Route
+            className="animals-nav"
             path="/animalsDB"
             element={<SectionForImages dbs={animals} />}
           />

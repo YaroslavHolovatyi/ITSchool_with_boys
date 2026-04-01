@@ -1,3 +1,4 @@
+import "./sectioncomponents.css";
 //todo + потрібно підготувати пропси якими ми отримуватимемо дані для мапу
 
 //  todo + імпортувати card
@@ -15,7 +16,7 @@ export default function SectionForImages(props) {
             <Card
               imageSrc={db.imageSrc}
               title={db.title}
-              textAbout={db.textAbout}
+              textForCard={db.textForCard}
               wikipediaPageSrc={db.wikipediaPageSrc}
             />
           ),
